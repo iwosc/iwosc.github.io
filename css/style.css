@@ -1,0 +1,886 @@
+/*
+Theme Name: interiotuv2012
+Theme URI: https://www.uv.mx
+Description: Universidad Veracruzana 2012
+Author: jl Simon
+Version: 1.0
+License: GNU General Public License
+License URI: Puede utilizarlo tanto en lo personal como comercialmente, es libre de editarlo a su gusto sin necesidad de referenciar al autor.
+License: GNU General Public License
+Tags: menu, slider, sidebar, widgets
+*/
+
+.entregarecepcion{ background:#006699; color:#fff;width:75.8%; margin:2% 0 0 10.5%;  overflow:hidden; text-align:center; padding:10px 0; border-radius:10px;}
+.entregarecepcion a{color:#fff; font-size:2.1em; }
+.entregarecepcion a:hover{ text-decoration:underline;}
+/* = ESTILOS GENERALES
+-------------------------------------------------------------- */
+.flexslider .slides img {height:22.7em;}
+
+/* =Busqueda
+-------------------------------------------------------------- */
+.tile-busqueda {width: 158px;background:#4CCFFF;font-size: 1px;}
+.tile-busqueda-link {font-size: 1px;color: #069;background-position: center -68px;cursor: pointer;}
+.tile-busqueda-search {display: none;}
+
+#searchform{ margin: 12% 5% 0 5%;  }
+#searchform input{ width: 95%; }
+#searchform button{ margin: 5px 0; padding: 0 20px; }
+
+.tile-busqueda-input {font-size: 1px;padding: 10px 0 0 0;line-height: normal;text-align: center;}
+.tile-busqueda-input form {	margin: 0;	padding: 0;}
+
+.boton-regresar{text-indent:-999em; }
+
+
+.Titulo{ font-size:2.25em; color:#fff; text-align:center;font-family:"Gill Sans", "Gill Sans MT", Arial, Helvetica, sans-serif; 
+margin-top:0.2%; text-align:center;  line-height:1.28em; float:left; width:95.5%; overflow:hidden; display:block;  }
+.Titulo a{ color:#036; text-decoration:none;}
+.Titulo a:hover{ text-decoration:underline;}
+
+.resultados{font-size: 2em;   line-height: 2em; color:#036;   display:block; background:#FFF;}
+.resultados mark{ padding:0 1%; background:#FFF;}
+/*Estilos para el Slide de la home*/
+/*.slides-articulo h2{ font-size:1.275em !important;}
+.slides-articulo{ font-size:1.325em !important;}
+*/
+/*----- Contenedor area post -----*/
+#content {/*	width: 530px;*/	width:100%;	 margin:0;}
+#contentInterior{max-width: 1003px; margin:0 auto; height:auto; height:100%; }
+#ContenedorHome{ overflow:hidden; width:100%; }
+#contentInterior .AreaWidgetsHome{ width:100%; }
+.AreaWidgetsHome{ width:79.8%; margin:3% auto 0 auto; overflow:hidden; }
+.AreaWidgetsHome aside img{ max-width:100%;}
+/*.AreaWidgetsHome aside{ outline:1px #000 solid;}*/
+.AreaWidgetsHome .widget div {padding: 0;}
+.AreaWidgetsHome .widget{ margin:0;}
+.AreaWidgetsHome .menu{ list-style:none !important;  padding:0; margin:0;width:100%; }
+
+.AreaWidgetsHome  .widget{width:30%; float:left; list-style:none; padding:0; margin:0 15px 20px 5px;  height:180px; 
+box-shadow: 0 0 5px 1px #999999;border:1px #069 solid;color:#09c; }
+.boxtwitter{ width:29.5%;float:right !important;height:383px !important;  margin:0 5% 20px 0 !important;border:1px #00349A solid;}
+.boxtwitter h3{ background:#00349A !important;}
+.boxtwitter span{  background:#00349A url(images/twitter-footer.jpg) no-repeat 97% 4px;
+ display:block;color:#FFF; font-size:0.95em;padding:6px 40px 7px 0;}
+.boxtwitter span a{ color:#fff !important;text-align:right; display:block;}
+.ancho{ width:100% !important;}
+.AreaWidgetsHome .widget_sp_image_uv > div{ height:132px;}
+.AreaWidgetsHome .widget.widget_nav_menu, .AreaWidgetsHome .mapa .widget, .AreaWidgetsHome  .clima .widget{
+	 width:100% !important; float:none; padding:inherit; margin:0; height:130px; border:none; box-shadow:none;}
+#clima-info{ margin-top:14px;}
+/*.AreaWidgetsHome > .widget.widget_nav_menu{border:none; box-shadow:none; width:29.5% !important;float:left; list-style:none; padding:0; 
+margin:0 15px 20px 5px;  height:190px !important; overflow:scroll;  } 
+.AreaWidgetsHome .widget_nav_menu li{  width:100% !important; padding:inherit; margin:0;}*/
+
+.AreaWidgetsHome .widget_nav_menu h3{ display:none !important ;}
+.AreaWidgetsHome .widget h3{background:#09c; color:#FFF;text-align:center; display:block; padding:4% 0; font-size:1.35em;}
+
+.posts .entry-content .AreaWidgetsHome ul{ padding:0; margin:0;}
+
+.AreaWidgetsHome .menu > li{width:30%;/*background:#EBF4FA; */float:left; list-style:none; padding:0; 
+margin:0 15px 20px 5px;  height:180px; box-shadow: 0 0 5px 1px #999999;border:1px #069 solid;color:#09c;}
+/*.AreaWidgetsHome .menu > li:last-child{ margin:0; }*/
+.AreaWidgetsHome .menu > li > a{background:#09c; color:#FFF;text-align:center; display:block; padding:4% 0 !important; font-size:1.35em;  }
+.AreaWidgetsHome .menu > li > a:hover{ text-decoration:none;  }
+/*azul cielo*/
+.AreaWidgetsHome .menu > li.color-1 > a{ background:#09c;}
+.AreaWidgetsHome .menu > li .sub-menu{background:transparent;}
+/*.quienes {background:url(https://www.uv.mx/fei/images/image10.JPG) no-repeat center center !important;}*/
+
+/*agua*/
+.AreaWidgetsHome .menu > li.color-2 > a{ background:#3db1b1;}
+.AreaWidgetsHome .menu > li.color-2{ border:1px #3db1b1 solid;/*background:#E6F7F7;*/}
+.AreaWidgetsHome .menu > li.color-2 .sub-menu{ color:#3db1b1;}
+
+/*azul*/
+.AreaWidgetsHome .menu > li.color-3 > a{ background:#069;}
+.AreaWidgetsHome .menu > li.color-3 { border:1px #069 solid;/* background:#E8F8FF;*/}
+.AreaWidgetsHome .menu > li.color-3 .sub-menu{ color:#069;}
+/*violeta*/
+.AreaWidgetsHome .menu > li.color-4 > a{ background:#643db1;}
+.AreaWidgetsHome .menu > li.color-4 { border:1px #643db1 solid;/* background:#EEE9F8;*/}
+.AreaWidgetsHome .menu > li.color-4 .sub-menu{ color:#643db1;}
+
+/*verde2*/
+.AreaWidgetsHome .menu > li.color-5 > a{ background:#693;}
+.AreaWidgetsHome .menu > li.color-5 { border:1px #693 solid;/*background:#EFF7E8;*/}
+.AreaWidgetsHome .menu > li.color-5 .sub-menu{ color:#693;}
+
+/*cafe*/
+.AreaWidgetsHome .menu > li.color-6 > a{ background:#c93;}
+.AreaWidgetsHome .menu > li.color-6 { border:1px #c93 solid;/*background:#F9F2E3;*/}
+.AreaWidgetsHome .menu > li.color-6 .sub-menu{ color:#c93;}
+
+/*azul2*/
+.AreaWidgetsHome .menu > li.color-7 > a{ background:#39c;}
+.AreaWidgetsHome .menu > li.color-7 { border:1px #39c solid;/*background:#EBF4FA;*/}
+.AreaWidgetsHome .menu > li.color-7 .sub-menu{ color:#39c;}
+
+/*naranja*/
+.AreaWidgetsHome .menu > li.color-8 > a{ background:#c60;}
+.AreaWidgetsHome .menu > li.color-8 { border:1px #c60 solid;/*background:#FFF3E8;*/}
+.AreaWidgetsHome .menu > li.color-8 .sub-menu{ color:#c60;}
+
+/*rey*/
+.AreaWidgetsHome .menu > li.color-9 > a{ background:#039;}
+.AreaWidgetsHome .menu > li.color-9 { border:1px #039 solid;/*background:#EAF1FF;*/}
+.AreaWidgetsHome .menu > li.color-9 .sub-menu{ color:#039;}
+.AreaWidgetsHome .widget_nav_menu .sub-menu{ text-align:left; background:#FFF; display:block;}
+
+.Negociaciones .menu > li{ height:80px; margin:0 2px 10px 5px;  border:none; box-shadow:none;}
+.Negociaciones .menu > li > a{ height:auto !important; height:60px; min-height:60px; font-size:1.45em; 
+padding:7.8% 3% 0 !important; }
+
+.Negociaciones .menu > li.no-1 > a{ background:#063; padding:4.1% 3% !important; }
+.Negociaciones .menu > li.no-2 > a{ background:#096; padding:4.1% 3% !important; }
+.Negociaciones .menu > li.no-3 > a{ background:#099; padding:4.1% 3% !important;}
+.Negociaciones .menu > li.no-4 > a{ background:#09c; }
+.Negociaciones .menu > li.no-5 > a{ background:#069; }
+.Negociaciones .menu > li.no-6 > a{ background:#036; }
+.Negociaciones .menu > li.no-7 > a{ background:#693; padding:4.1% 3% !important; }
+/*.AreaWidgetsHome .widget_nav_menu .sub-menu a{ color:#036;}
+.AreaWidgetsHome .widget_nav_menu .sub-menu .menu-item {}*/
+
+.AreaWidgetsHome .widget a{color:#036;font-size:1.1em; line-height:1.35em;}
+.posts .entry-content .AreaWidgetsHome ul.sub-menu { padding:0 4% 0 9%;  margin:0%;}
+.posts .entry-content .AreaWidgetsHome ul.sub-menu a{ font-weight:400; color:#036 !important;}
+
+
+.AreaWidgetsHome .mapa, .AreaWidgetsHome .clima, .AreaWidgetsHome .Menu-Colores { width:30%; float:left; margin:0 15px 20px 5px; padding:0;box-shadow: 0 0 5px 1px #999999;}
+.AreaWidgetsHome .Menu-Colores{ box-shadow:none;}
+/*.AreaWidgetsHome .Menu-Colores li{box-shadow: 0 0 5px 1px #999;}*/
+.AreaWidgetsHome .mapa h3{ background:#069; text-align:center; display:block; padding:4% 0; font-size:1.325em; color:#FFF;}
+.AreaWidgetsHome .mapa{border:1px #069 solid;}
+.AreaWidgetsHome .clima{border:1px #ACACAC solid; /* background:#EEE9F8;*/}
+.AreaWidgetsHome .clima h3{background:#ACACAC; text-align:center; display:block; padding:4% 0; font-size:1.325em; color:#FFF;}
+.resposanble{ box-shadow:none; border:1px #39c solid;   font-size:1.125em; }
+.resposanble p{ margin-left:2%; padding-top:2%;color:#036;}
+
+/* =ESTILOS PARA EL AREA DE CONTENIDOS ( CONTENT-SIDEBAR )
+-------------------------------------------------------------- */
+/* Hypertext
+---------------------------------------- */
+.entry-content a{color: #069; }
+.entry-content a:link {color: #069;text-decoration: none;}
+.entry-content a:visited {color: #999;}
+.entry-content a:hover {color: #999;text-decoration: none;}
+.entry-content a:active {color: #069;}
+
+/* Text
+---------------------------------------- */
+
+#main .main-content {width: 100%;margin: 0 auto; clear:both; background:#FFF; color:#036;}
+#main .main-content hr{ clear:both; background:#fff;  } 
+
+/*----- post -----*/
+/*caminito*/
+#top-menu{ height:30px; line-height:2em; display:none;  }
+#top-menu a{ color:#333; text-decoration:none;}
+#top-menu a:hover{text-decoration:underline;}
+#top-menu ul, #top-menu li{ padding:0; margin:0; list-style:none;}
+#top-menu li{ float:left; padding: 2px;}
+
+
+.posts {float: left;  margin:0 2% 0 1%; width:100%;  }
+
+.posts .entry-content {
+	text-decoration: none; 
+}
+
+.entry-content img, 
+.wp-caption {
+	max-width: 100%;
+	height: auto;
+}
+.wp-caption {
+	background: #f8f8f8;
+	padding:5px;
+	border: 1px solid #ccc; 
+	margin: 1% auto;
+	font-size:0.8em;
+	
+}
+.entry-content .wp-caption img {
+	border: 1px solid #ccc;
+	/*max-width: 98.5%;*/
+	margin: 4px;
+}
+.alignnone {
+    margin: 5px 1.5em 1.5em 0;
+}
+.alignright {
+	float: right;
+	margin: 4px 0 12px 1.5em !important;
+}
+.alignleft {
+	float: left;
+	margin: 4px 1.5em 12px 0 !important;
+}
+.aligncenter {
+	display: block;
+	margin: 1em auto !important;
+}
+
+.AreaWidgetsHome .alignleft, .AreaWidgetsHome .alignright, .AreaWidgetsHome .aligncenter{ margin:0 !important;}
+.AreaWidgetsHome .aligncenter{	text-align:center; margin:0 auto !important;}
+.AreaWidgetsHome .alignright{ text-align:right;}
+
+.wp-caption-text {
+	color: #000 !important;
+	margin: 0 !important;
+	text-align: center;
+	padding:0;
+	line-height:1.5em !important;
+}
+
+.posts .entry-titulo { height:auto;}
+
+#contentInterior .entry-titulo div{ 
+  font-size:1.525em; line-height:2em; display:block; width:100%;}
+#contentInterior .entry-titulo mark{ padding:1% 0; background:#FFF;}
+.posts .entry-titulo h2 {position: relative;}
+.posts .entry-titulo h2 a { color:#036;
+	text-decoration: none;
+	font-size: 1.525em;
+	line-height:1em;
+	font-weight: 400;
+}
+
+.posts  .MetaDatos {
+	color: #666666;
+	font-weight: bold;
+	font-size: 0.9em; 
+	display:none;
+}
+
+.posts .MetaDatos .fecha,
+.posts .MetaDatos span {
+	font-weight: normal;
+	display: inline-block;
+	margin-right: 15px;
+	text-shadow: 1px 1px 1px #FFF;
+}
+
+.posts .MetaDatos span a, .posts div.metaBottom a{color:#333;	margin-left: 2px; text-decoration:none;}
+.posts .MetaDatos span a:hover, .posts div.metaBottom a:hover{ text-decoration:underline;}
+
+.posts .entry-content ul{ overflow:hidden; padding-left:40px;  list-style:disc; padding-bottom:10px; }
+.posts .entry-content ol{ overflow:hidden;padding-left:40px; list-style:decimal;padding-bottom:10px;}
+
+.entry-content li{ padding:3px 0;}
+.entry-content li strong{ font-size:1.2em;}
+.entry-content td strong{ font-size:1.2em;}
+.posts .entry-content h6, 
+.posts .entry-content h5, 
+.posts .entry-content h4, 
+.posts .entry-content h3, 
+.posts .entry-content h2, 
+.posts .entry-content h1{ font-weight:700; padding-bottom:10px;}
+
+.posts .entry-content a { color:#333; text-decoration:none; font-weight:700; }
+.posts .entry-content a:hover { text-decoration:underline;}
+
+.posts .entry-content  > table, .posts .entry-content  div > table{ width:100% !important;}
+table, th, td			{ border: 1px solid #CCC; padding:0.5%;}
+th, thead th			{ font-weight: 700; color: #333; background:#E6E6E6; }
+td, tbody td			{ background: #f9f9f9; }
+tbody td p{ padding:0 2%;}
+
+dl  { margin: 10px 0; font-size: 14px; }
+dl dt  { color: #666; padding-bottom: 3px; }
+dl dd  { margin: 0 0 10px 0; line-height: 1.5em; }
+
+#contentInterior .posts{ margin:1% 0 3% 0;}
+
+.posts figure {
+	float: left;
+	background: #f8f8f8;
+	padding: 5px;
+	border: 1px solid #ccc; margin:0 1.5% 1.5% 0; 
+}
+
+.posts div.metaBottom .leermas { margin-right:15px; font-weight:700; font-size:1.125em;}
+.posts div.metaBottom {   float:none;}
+
+/* Navegador de post */
+.newer-older{
+	display: block;
+	clear: both;
+	padding: 12px 0;
+	margin-left:1%;  
+}
+.older{float: left; text-align:left;}
+.newer{float: right; text-align:right;}
+.newer-older p{
+	display: block;
+	background: #f5f5f5;
+	border-radius: 5px;
+	box-shadow: 1px 1px 0px 0px #ccc;
+	overflow:hidden;
+}
+.newer-older p a{
+	display: block;
+	height: 30px;
+	line-height:30px;
+	padding: 0 15px;
+	color: #000;
+	text-decoration: none;
+	font-weight: bold;
+	text-shadow: 1px 1px 0 #ccc;
+	width:110px;
+}
+.newer-older p:hover{background:#ddd;}
+.older:hover a{	color: #333;}
+.newer:hover a{	color: #333;}
+
+.widget { margin-bottom:10px;/*max-width: 100%;*/}
+.widget div{ padding:0 2%;}
+.widget img{ margin:1% auto 0 auto; padding:0; text-align:center; display:block;}
+.post-ratings{ margin:0.5% 0 2%;}
+
+.widget_ratings-widget img{ margin:0 !important; display:inline !important;}
+
+.error404 .widget_tag_cloud {float: none;margin-right: 0;width: 100%;}
+
+.error404 .widgettitle {font-size: 1em;	line-height: 2.6em; font-weight:700;}
+
+.widget ul{ list-style:disc;  margin:2% 5% 5% 10%;}
+.widget li{ list-style:disc;}
+.no-results h2{ font-weight:700; font-size:1.5em;}
+
+/* =ESTILOS PARA LA P?GINA SINGLE
+-------------------------------------------------------------- */
+/*Parrafos*/
+.entry-content P{
+	line-height: 20px;
+	margin-bottom: 15px;
+}
+
+blockquote {
+	background: #f5f5f5;
+	border: 1px dotted #e3e3e3;
+	clear: both;
+	margin: 1em 2em;
+	padding: 8px 18px 5px 10px;
+}
+blockquote p {
+	color: #474747 !important;
+	margin-bottom: 5px;
+	margin-top: 0 !important;
+	text-indent: 35px;
+}
+blockquote cite {
+	display: block;
+	font-style: italic;
+	margin-top: 10px;
+	text-align: right;
+}
+blockquote blockquote {
+	margin-left: 0;
+}
+p cite {
+	display: block;
+	text-align: right;
+}
+p code {
+	background-color: #EDEDFF;
+}
+
+/* Calendar Widget */
+
+.widget_calendar #wp-calendar {
+	color: #666;
+	width: 95%;
+	text-align: center; margin:0 auto;
+}
+.widget_calendar #wp-calendar caption,
+.widget_calendar #wp-calendar td,
+.widget_calendar #wp-calendar th {
+	text-align: center;
+}
+.widget_calendar #wp-calendar td a { background:#FFF; display:block; font-weight:700;}
+.widget_calendar #wp-calendar tfoot td a { background:none; font-weight:700;}
+
+.widget_calendar #wp-calendar caption {font-size: 1em;	font-weight: 700;	padding: 5px 0 3px 0;	text-transform: uppercase;}
+.widget_calendar #wp-calendar th {
+	background: #f6f6f6;
+	border-top: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;
+	font-weight: bold;
+}
+.widget_calendar #wp-calendar tfoot td {
+	background: #f6f6f6;
+	border-top: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;
+}
+/*.slides, .pager{ padding-left:0 !important; list-style:none !important;}*/
+
+
+/* ESTILOS PARA LISTA DE COMENTARIOS*/
+
+h3#comments{ overflow:hidden;
+	font-size: 15px;
+	background:#ddd;
+	height: 55px;
+	line-height: 50px;
+	margin: 1% 0  0 1%;
+	padding-left:20px;
+	color: #333; 
+}
+.commentlist{
+    border: medium none !important;
+    list-style: none outside none;
+    margin-left: 1%;
+}
+.commentlist li .children > li{	padding-left: 25px;	}
+.comment-body{
+	padding-bottom:25px;
+	position:relative;
+	overflow:hidden;background: #f8f8f8;
+}
+.comment-awaiting-moderation{color:red;text-align:center;}
+.commentlist li > .children #respond h3{margin: 0 0  15px -46px;}
+.commentlist li > .children li > .children #respond h3{margin: 0 0  15px -71px;/*nivel 2 comentarios anidados*/}
+.commentlist li > .children li > .children li > .children #respond h3{margin: 0 0  15px -96px;/*nivel 3 comentarios anidados*/}
+
+.comment-body p{
+	margin:15px 0;
+	padding: 0 15px;
+}
+
+.comment-author{
+	background: #eee;
+	border-radius: 5px;
+	border: solid 1px #EBE9D6;
+	height: 50px;
+}
+.comment-author img{
+	background: #f1f1f1;
+	padding:3px;
+	margin: 5px;
+	border: 1px solid #cbcbcb;
+}
+div.reply a, .comment-meta a,.comment-author a{ color:#333;}
+.comment-author .fn,
+.comment-author .says{
+	position: relative;
+	top: -20px;
+	font-style:italic;
+}
+.commentmetadata{
+	position: absolute;
+	right:10px;
+	top: 15px;
+}
+
+/* FORMULARIO DE COMENTARIOS */
+#respond{
+	clear:both;
+	display: block;
+	border-top: solid 1px #ecede9;
+	padding: 15px 2%;
+	position:relative;
+	background:#f8f8f8; margin:2% 0 0 1%;  
+
+}
+#respond h3{
+	font-size: 16px;
+	color: #333;
+	height: 55px;
+	line-height: 55px;
+	margin: 0 0  15px -22px;
+	padding-left:20px; font-weight:700;
+}
+.reply{
+	bottom: 25px;
+    position: absolute;
+    right: -76px;
+	opacity:0;
+	-webkit-transition: all 0.2s ease-in-out;
+	-moz-transition: all 0.2s ease-in-out;
+	-o-transition: all 0.2s ease-in-out;
+	transition: all 0.2s ease-in-out;
+}
+.comment-body:hover > .reply{ right:0px; opacity:1;}
+
+#respond #cancel-comment-reply {
+    position: absolute;
+    right: 0;
+    top: 35px;
+}
+
+#respond #cancel-comment-reply a{color:red; font-style:italic;}
+#respond #cancel-comment-reply a:hover{text-decoration:none; border-bottom: 1px dotted red;}
+
+div#respond form#commentform p{ margin: 15px 0;}
+div#respond form#commentform input[type=text]{	width: 230px; height:20px;}
+#commentform #submit{width: auto !important;}
+div#respond form#commentform textarea{ width: 400px;}
+#commentform label{font-size:11px;margin-left:10px;}
+
+.nocomments{color:#999; text-align:center; clear:both;}/*Comentarios Cerrados*/
+.page .nocomments{display: none;}
+
+/*----- CopyRight Footer -----*/
+#RedesSoc{ overflow:hidden; clear:both; margin:2.5% 0 .4% 0;  }
+#RedesSoc ul{ margin:0; padding:0;}
+#RedesSoc li {margin:0 2px 0 0; float:left; display:inline; text-indent: -999em; text-align:center;background:#B2B2B2 url(images/sprite-dependencias.png) no-repeat top left;}
+#RedesSoc li a{   display:block;  color:#FFF;padding:19px 0; }
+#RedesSoc li a:hover{ text-decoration:none;}
+#RedesSoc li.Google{ width:75px; background-position:25px -1460px; } 
+#RedesSoc li.Facebook{ width:75px;background-position:25px -1515px; } 
+#RedesSoc li.Twitter{ width:75px;background-position:25px -1568px;} 
+#RedesSoc li.Youtube{width:145px;background-position:25px -1622px;} 
+#RedesSoc li.Itunes{ background:#666; width:145px; text-indent:0 !important;font-size:1.425em;}
+#RedesSoc li.Itunes a{ padding:2px 0 2px 0;}
+#RedesSoc li.Rss{width:75px;  } 
+#proteccioncivil{ width:28%; float:right;}
+#proteccioncivil a{
+    background:#336799 url("https://www.uv.mx/imagenes/principal/sprite-cinta-enlaces.png");
+    background-repeat: no-repeat;
+    display: block;
+    height: 62px;
+    line-height: 62px;
+    background-position: 10% -136px;
+    color: #FFFFFF;
+    font-size: 1.525em;
+    font-weight: 300;
+    text-align:center; 
+}
+
+
+/*pra el pie de pagina*/
+#pie-sitio { margin:0;}
+#pie { float: left; width: 68%;margin:0 !important; }
+.pie-buzon {float:right !important;width: 28% !important;}
+
+.widget.widget_nav_menu { height: auto!important; }
+
+.aniversario70{clear:both; border: 1px solid #DDDDDF;   display: block;width:100%; overflow:hidden;}
+.aniversario70 img{ float:left; max-width:100%;}
+.aniversario{ width:auto !important; display:block; text-align:center; margin:1.5% auto;  padding:0 3% 0 9%;}
+.aniversario70 div{background: url(/imagenes/principal/banner70-PTE-1.jpg) no-repeat left top; 
+color: #29509B;float: left;
+ text-align: center;width: 52%;  height:109px; margin-right:0.4%;  }
+ .aniversario70 h2{ padding:4.5% 0;  width:99.8%;}
+.aniversario70 div a{ text-decoration:none;color: #29509B;}
+
+.infosegura{clear:both; border: 1px solid #999;   display: block;width:99.8%; margin-top:25px;  overflow:hidden;}
+.infosegura img{ float:left; padding:15px; margin:0 6%}
+.infosegura p{ float:left; width:70%;padding:17px 0 3px 0;}
+/* ---------[ Responsive Design ]--------- */
+@media only screen and (max-width: 480px) {
+	.aniversario70 img{ float:none !important; padding:1% 0; margin:0 auto !important; width:auto !important; text-align:center; display:block;}
+	.aniversario70 div{ clear:both; float:none; width:100%;  }
+	.aniversario70	{margin-bottom:1%;}
+	
+	.infosegura img{ float:none !important; padding:1% 0; margin:0 auto !important; width:auto !important; text-align:center; display:block;}	
+	.infosegura{clear:both; float:none; width:99%; margin-bottom:20px;}
+	.infosegura p{ clear:both; float:none; width:99.5%; }
+	
+	.tile-busqueda{width:100% !important; }
+	.AreaWidgetsHome .menu > li .sub-menu { display:none;}
+	.AreaWidgetsHome .widget_nav_menu { height:50px;}
+	.AreaWidgetsHome .menu > li { height:50px; border:none !important; box-shadow:none;margin-bottom:1%; overflow:hidden;}
+	.single .posts, .page .posts, #sidebar, #RedesSoc{width:100%; clear:both; }
+	#pie, .pie-buzon, .pie-buzon a, #proteccioncivil{width:100% !important; clear:both; margin:0 auto;}
+	.pie-copy, .pie-global{ padding-right:15px;} 
+	
+	.AreaWidgetsHome .menu > li, .AreaWidgetsHome,.AreaWidgetsHome .mapa, .AreaWidgetsHome .clima,.AreaWidgetsHome .widget{width:98%; margin: inherit 0;}
+	
+	#RedesSoc li{ margin-bottom:3px;}
+	.resposanble{ height:auto !important; overflow:hidden;}	
+
+	div#respond form#commentform textarea{ width: 90%;}
+	#respond{ margin:0 1%; width:98%;}
+	.boton-regresar{  clear:both; position:relative;}
+	.AreaWidgetsHome .widget_sp_image_uv > div { height:126px;}
+	.flexslider .slides img {height:auto !important;}	
+}
+
+@media only screen and (min-width: 481px) and (max-width: 770px) {
+	.aniversario70 img{ float:none !important; padding:1% 0; margin:0 auto !important; width:auto !important; text-align:center; display:block;}
+	.aniversario70 div{ clear:both; float:none; width:100%;  }
+	.aniversario70	{margin-bottom:1%;}
+	
+	.infosegura img{ float:none !important; padding:1% 0; margin:0 auto !important; width:auto !important; text-align:center; display:block;}	
+	.infosegura{clear:both; float:none; width:99.5%;margin-bottom:20px; }
+	.infosegura p{ clear:both; float:none; width:100%; }
+	
+	
+	.single .posts, .page .posts,#sidebar {width:100%; clear:both; }
+	 .AreaWidgetsHome{ width:99%; margin:0 auto; }
+	 .AreaWidgetsHome .menu > li, .AreaWidgetsHome .mapa, .AreaWidgetsHome .clima,.AreaWidgetsHome  .widget{ width: 45%; }
+	 ul.sub-menu li{ padding:1px 0; }
+	 .AreaWidgetsHome ul.sub-menu { padding-right:1% !important; 	}	
+ 	 div#respond form#commentform textarea{ width: 90%;}
+	.AreaWidgetsHome .widget a { font-size: 1.1em; line-height: 1.1em; }
+	#proteccioncivil a{ font-size:1.105em; background-position: -15px -136px !important; padding-left:30px;}
+	.flexslider .slides img {height:auto !important;}	
+}
+@media only screen and (min-width: 771px) and (max-width: 960px) {
+	.aniversario70 div{ clear:both; float:none; width:100%; background-position: center;   }
+	.aniversario70 img{ float:none !important; padding:0; margin:0 auto !important; width:auto !important; text-align:center; display:block; }	
+	.aniversario70	{margin-bottom:1%;}
+	
+	.infosegura p{  width:58.5%; }
+	
+	.AreaWidgetsHome{ width:91%; }
+	 ul.sub-menu li{ padding:1px 0;  }
+	.AreaWidgetsHome ul.sub-menu { padding-right:1% !important;}	 
+	.AreaWidgetsHome .widget a { line-height: 1.2em;}	
+	.boxtwitter{ margin-right:3% !important;}	
+	#proteccioncivil a{ font-size:1.25em; background-position: 0 -136px !important; padding-left:50px;}
+}
+@media only screen and (min-width: 961px) and (max-width: 1200px) {
+	.boxtwitter{ margin-right:4% !important; margin-left:1%; }		
+	.aniversario70 img{ float:none !important; padding:0; margin:0 auto !important; width:auto !important; text-align:center; display:block;}	
+	.aniversario70 div{ clear:both; float:none; width:100%; background-position: center; }
+	
+	.infosegura p{  width:65.5%; }
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1255px) {
+		.aniversario70 div{ width:77%  }
+}
+/* =WP-PageNavi plugin
+-------------------------------------------------------------- */
+
+.wp-pagenavi {
+	clear: both;
+}
+
+.wp-pagenavi a, .wp-pagenavi span {
+	text-decoration: none;
+	border: 1px solid #BFBFBF;
+	padding: 3px 5px;
+	margin: 2px;
+}
+
+.wp-pagenavi a:hover, .wp-pagenavi span.current {
+	border-color: #000;
+}
+
+.wp-pagenavi span.current {
+	font-weight: bold;
+}
+
+
+/* =Barra Menu Header
+-------------------------------------------------------------- */
+
+#wp-admin-bar-wp-logo {
+	visibility: hidden;
+}
+
+
+/* =Colores Fondo Widget
+-------------------------------------------------------------- */
+
+.widget_sp_image_uv .aligncenter {background-position:center !important;}
+.widget_sp_image_uv .alignright {background-position:right !important;}
+.widget_sp_image_uv div{ width:99.4% !important;}
+.widget_sp_image_uv img{  max-height:100%; margin-top:0 !important; }
+
+.widget_sp_image_uv-description, .widget_sp_image_uv-description a{ color:#FFF !important; font-size:1.2em; }
+
+/*agua*/
+h3.agua{ background:#3db1b1 !important;}
+.agua { border:1px #3db1b1 solid; background:#3db1b1;}
+div.agua{ background:#FFF;color:#3db1b1 !important;}
+div.agua li{  font-size:0.85em !important;color:#3db1b1 !important;}
+
+
+h3.acielo { background:#0099CC !important;}
+.acielo { border:1px #0099CC solid; background:#0099CC;}
+div.acielo{ background:#FFF;color:#0099CC !important;}
+div.acielo li{  font-size:0.85em !important;color:#0099CC !important;}
+
+h3.amarino { background:#006699 !important;}
+.amarino { border:1px #006699 solid; background:#006699;}
+div.amarino{ background:#FFF;color:#006699 !important;}
+div.amarino li{  font-size:0.85em !important;color:#006699 !important;}
+
+
+h3.violeta { background:#643DB1 !important;}
+.violeta { border:1px #643DB1 solid; background:#643DB1;}
+div.violeta{ background:#FFF;color:#643DB1 !important;}
+div.violeta li{  font-size:0.85em !important;color:#643DB1 !important;}
+
+
+h3.verde { background:#669933 !important;}
+.verde { border:1px #669933 solid; background:#669933;}
+div.verde{ background:#FFF;color:#669933 !important;}
+div.verde li{  font-size:0.85em !important;color:#669933 !important;}
+
+
+h3.naranja { background:#CC9933 !important;}
+.naranja { border:1px #CC9933 solid; background:#CC9933;}
+div.naranja{ background:#FFF;color:#CC9933 !important;}
+div.naranja li{  font-size:0.85em !important;color:#CC9933 !important;}
+div.ligatxt a, div.ligatxt p{ color:#036 !important;}
+
+/*.widget_sp_image_uv-description{ margin-top:29%; height:37px; padding:3px 5px !important; }*/
+
+
+/* =Opciones interiores
+-------------------------------------------------------------- */
+
+.Menu-Colores{ width:100%; border-right:1px #fff solid; }
+.Menu-Colores ul{ margin:0; padding:0; list-style:none; height:180px; box-shadow: 0 0 5px 1px #fff; margin:0 0 2px 0; }
+.Menu-Colores li{ width:100%; margin:1.2% 2px;}
+/*.Menu-Colores .uno{ padding:1%;}*/
+.Menu-Colores .dos a{ padding:10.8% 0!important; }
+.Menu-Colores li:first-child{ margin:0 2px;}
+.Menu-Colores a{ padding:5.6% 0; font-size:1.35em; display:block; color:#eee; text-align:center; }
+
+/*.dos{ height:49% !important; margin:1% 0; }
+.tres{ width:100%; height:32%; margin:1% 0;}
+.Menu-Colores li:first-child{ margin:0;}
+.Menu-Colores a{ font-size:1.35em; display:block; color:#eee; text-align:center; }*/
+
+.otono0{ background-color:#693; }
+.otono1{ background-color:#c93; }
+.otono2{ background-color:#c60; }
+.invierno0{ background-color:#069; }
+.invierno1{ background-color:#039; }
+.invierno2{ background-color:#39c; }
+.bosque0{ background-color:#066; }
+.bosque1{ background-color:#096; }
+.bosque2{ background-color:#3db1b1; }
+.miel0{ background-color:#930; }
+.miel1{ background-color:#c60; }
+.miel2{ background-color:#c93; }
+.piedras0{ background-color:#333; }
+.piedras1{ background-color:#666; }
+.piedras2{ background-color:#999; }
+.lavanda0{ background-color:#669; }
+.lavanda1{ background-color:#643db1; }
+.lavanda2{ background-color:#039; }
+
+
+
+@media only screen and (max-width: 480px) {	
+	.AreaWidgetsHome .Menu-Colores{ width: 97.5% !important; }	
+	.Menu-Colores .dos { height:59px; }
+	.Menu-Colores .uno { height:59px; }
+	.Menu-Colores .dos a{ padding:4.8% 0!important;  }
+	.Menu-Colores .uno a{ padding:3.8% 0!important;  }
+	.Menu-Colores .tres { height:58.3px; }
+}
+
+@media only screen and (min-width: 481px) and (max-width: 770px) {
+	.AreaWidgetsHome .Menu-Colores{ width: 45% !important; }	 
+	.Menu-Colores .dos { height:90px; }
+	.Menu-Colores .uno { height:89px; }
+	.Menu-Colores .tres { height:58.3px; }
+	.Menu-Colores .dos a{ padding:13.8% 0!important;  }
+	
+}
+
+@media only screen and (min-width: 771px) and (max-width: 820px) {
+	#AreaWidgetsHome{ width:90%; margin:0 auto;}
+	.Menu-Colores .dos { height:89px; }
+	.Menu-Colores .tres { height:58.3px; }
+	.Menu-Colores .dos a{ padding:13.5% 0!important;  }
+	
+
+}
+@media only screen and (min-width: 820px) {
+	#AreaWidgetsHome{ width:90%; margin:0 auto;}
+	.Menu-Colores .dos { height:89px; }
+	.Menu-Colores .tres { height:58.3px; }
+	.Menu-Colores .dos a{ padding:11.5% 0!important;  }
+	
+
+}
+
+
+/* =Ubicacion Mapa
+-------------------------------------------------------------- */
+
+#mapa {
+     margin:0 auto 0 auto;
+     width: 600px;
+     height : 400px;
+}
+
+/*Estilos del context menu*/
+.context_menu{
+	background-color:white;
+	border:1px solid gray;
+}
+.context_menu_item{
+	padding:3px 6px;
+}
+.context_menu_item:hover{
+	background-color:#CCCCCC;
+}
+.context_menu_separator{
+	background-color:gray;
+	height:1px;
+	margin:0;
+	padding:0;
+}
+
+/*Terminan estilos del context menu*/
+
+
+/* =Ubicacion Widget
+-------------------------------------------------------------- */
+
+#map_widget{
+	width:100%;
+	margin: 0.4% auto 0 auto !important;
+	height:128px;
+}
+
+
+/* =Clima
+-------------------------------------------------------------- */
+
+#widget-clima {
+	width:100%;
+	height:100%;
+	text-align: left;
+	font-family: Helvetica!important;
+	color: #000000;  
+}
+
+#clima-ciudad{
+	font-weight: bold;
+	color: #164CF0;
+	margin:0;
+	padding:0;
+}
+
+#clima-info{
+	margin-top: 0px;
+	width: 100%;
+}
+
+#imgIcon{
+	float:left; 
+	padding-left: 2px;
+	padding-right: 7px;
+	padding-bottom: 4px;
+}
+
+#clima-grados{
+	font-family: Arial;
+	font-size: 2em;
+	font-weight: bolder;
+	
+}
+
+#clima-pronostico-bar{
+
+}
+
+div.clima-pronostico{
+	display:inline-block;
+    padding-left: 30px;  
+}
+
+.dd_post_share div{ float:right; }
+.twitter-share-button{ width:90px !important; }

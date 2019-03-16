@@ -1,0 +1,375 @@
+/*
+ * Theme Name: Metro
+ * Theme URI: http://www.uv.mx/
+ *
+ * Author: Guillermo Vera
+ * Author URI: http://www.uv.mx/personal/gvera
+ * Es el tema predeterminado del sitio UV
+ * Version: 1.0
+ * Tema
+ *
+ * Esta es una aportacion para toda la humanidad.
+ */
+
+/* 
+* CONVOCATORIAS
+*/
+#cinta-eventos {
+    margin: 20px 0;
+    overflow: hidden;
+}
+#convocatorias {
+    float: right;
+    width: 22%;    
+    overflow: hidden;
+}
+#convocatorias .convocatorias-panel {
+    margin-left: 5%;
+    background-color: #fff;
+    overflow: hidden;
+}
+#convocatorias .convocatorias-item {
+    display: block;
+    text-decoration: none;
+}
+#convocatorias .convocatorias-panel h3 {
+    background-color: #00ABAD;
+    color: #fff;
+    font-size: 22px;    
+    text-align: center;    
+}
+.convocatoria-plazas h3 {
+    padding: 4px 15px;
+}
+.convocatoria-plazas .convocatoria-bg {
+    background-color: #C6EEEE;
+    background-image: url("../images/ico-convPlazas.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 120px;
+}
+.convocatoria-general {
+    margin-top: 10px;    
+}
+.convocatoria-general h3 {
+    padding: 4px 25px;
+}
+.convocatoria-general .convocatoria-bg {
+    background-image: url("../images/ico-convGral.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-color: #C6EEEE;
+    height: 148px;
+}
+
+/* 
+* EVENTOS
+*/
+#eventosuv {
+    float: left;
+    width: 78%;
+	background-color: #ebebeb;
+    height: 390px;
+	overflow: hidden;
+    padding: 0 0 20px;
+    position: relative;    
+}
+#eventosuv h2 {
+    padding: 10px 0;
+    margin: 0;
+    font-size: 28px;
+    color: #fff;
+    background-color: #00BE4D;
+    text-align: center;
+}
+.cargando {
+    background-image: url("/images/loader.gif");
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+.eventosuv-panel {
+    padding: 10px 16px;
+    overflow: hidden;
+}
+.consultar-agenda {
+    text-align: right;
+    font-size: 14px;
+    margin: 0 0 10px;
+}
+.consultar-agenda a {    
+    color: #036;
+    text-decoration: underline;    
+}
+.eventosuv-slider {
+	width: 57%;
+    float: left;
+    overflow: hidden;
+    height: 286px;
+    position: relative;
+}
+.eventosuv-slider .slick-list {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+}
+.eventosuv-slider-panel {
+    overflow: hidden;
+    height: 208px;
+    background-color: #fafafa;
+    box-shadow: inset 0px 0px 82px 8px rgba(0,0,0,0.25);
+}
+.eventosuv-slider img {
+    max-width: 100%;
+    height: auto;
+    margin: auto;
+    max-height: 208px;
+    /* Alineación middle */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);    
+}
+
+/* 
+* EVENTOS NAV
+*/
+.slick-slide:focus {
+    outline: none;
+}
+.eventosuv-slider-nav {
+	width: 42%;
+    margin-left: 1%;
+    float: right;
+    overflow: hidden;
+}
+.eventosuv-blade-panel {
+    background-color: #fff;    
+    overflow: hidden;
+    display: block;
+    text-decoration: none;
+    cursor: pointer;
+}
+.eventosuv-slider-nav .slick-list {    
+    background-color: #ebebeb;
+}
+.slick-vertical .slick-slide {
+    border: none;
+}
+.slick-current .eventosuv-border1, .eventosuv-border1:hover {
+    border-top: 4px solid #0058B1;
+}
+.slick-current .eventosuv-border2, .eventosuv-border2:hover{
+    border-top: 4px solid #A956AE;
+}
+.slick-current .eventosuv-border3, .eventosuv-border3:hover{
+    border-top: 4px solid #FF752C;
+}
+.slick-current .eventosuv-border4, .eventosuv-border4:hover {
+    border-top: 4px solid #00B864;
+}
+.slick-current .eventosuv-bg1, .eventosuv-sbg1 {
+    background-color: #0058B1;
+}
+.slick-current .eventosuv-bg2, .eventosuv-sbg2 {
+    background-color: #A956AE;
+}
+.slick-current .eventosuv-bg3, .eventosuv-sbg3 {
+    background-color: #FF752C;
+}
+.slick-current .eventosuv-bg4, .eventosuv-sbg4 {
+    background-color: #00B864;
+}
+.nav-texto {
+    float: left;
+    width: 80%;
+    height: 66px;
+    border-top: 4px solid #ebebeb;
+}
+.nav-texto:hover {
+    text-shadow: 1px 1px #eee;
+}
+.nav-texto-panel {
+    float: left;
+    width: 99%;
+    color: #000;
+}
+.nav-texto-panel-left {
+    font-size: 14px;
+    padding: 4px 10px 0;
+}
+.eventosuv-titulo {
+    height: 40px;
+}
+.eventosuv-categoria {
+    color: #666;
+}
+.nav-separador {
+    float: left;
+    width: 1%;
+    height: 48px;
+    margin: 5px 0 0px;
+    border-top: 4px solid #fff;
+}
+.slick-current .nav-separador {
+    background-color: #fff;
+}
+.nav-date {
+    float: left;
+    width: 20%;
+    height: 70px;
+    background-color: #000;
+}
+.nav-date-panel {
+    text-align: center;
+    color: #ddd;
+    line-height: 1;
+    margin-top: 2px;
+}
+.nav-date-panel .dia {
+    font-weight: 800;
+    font-size: 30px;
+}
+.nav-date-panel .mes {
+    font-size: 24px;
+    text-transform: capitalize;
+}
+.nav-date-panel .semana {
+    font-size: 11px;
+}
+
+
+/* 
+* FLECHAS
+*/
+.slick-prev {
+    left: 2px;
+    z-index: 1000;
+}
+.slick-next {
+    right: 2px;
+    z-index: 1000;
+}
+
+/*
+* CATEGORISD
+*/
+.eventosuv-categorias {
+    position: absolute;
+    bottom: 25px;
+    left: 8px;
+    font-size: 12px;
+    color: #036;
+}
+.eventosuv-categorias ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;    
+}
+.eventosuv-categorias ul li {
+    margin: 0;
+    padding: 0;
+    float: left;
+}
+.eventosuv-categorias ul li i {
+    height: 20px;
+    width: 20px;
+}
+.eventosuv-categorias .color1 {
+    color: #0058B1;
+}
+.eventosuv-categorias .color2 {
+    color: #A956AE;
+}
+.eventosuv-categorias .color3 {
+    color: #FF752C;
+}
+.eventosuv-categorias .color4 {
+    color: #00B864;
+}
+
+/* 
+* HELPERS
+*/
+.fa {
+    display: inline-block;
+    font-size: 14px;    
+    text-align: right;
+    width: 28px;
+    height: 34px;
+    line-height: 1;
+    text-rendering: auto;
+}
+.fa-agenda {
+    background: url("../images/marca-agenda.png") center bottom no-repeat;
+    margin-bottom: -5px;
+}
+.eventosuv-not-found {
+    background-color: #fff;
+    margin: 20px;
+    padding: 100px 0;
+    text-align: center;
+}
+
+@media (max-width: 900px) {
+
+    #eventosuv {
+        float: none;
+        width: 100%;
+        height: auto;
+        min-height: 300px;
+    }
+    #convocatorias {
+        float: none;
+        width: 100%;        
+    }
+    #convocatorias .convocatorias-panel {
+        margin-left: 0;
+        margin-top: 20px;
+    }
+
+    .convocatoria-plazas .convocatoria-bg, .convocatoria-general .convocatoria-bg {
+        height: 120px;
+    }
+
+    .eventosuv-slider {
+        width: 100%;
+        float: none;
+        height: 208px;
+        margin-bottom: 20px;
+    }
+    .eventosuv-slider-nav {
+        width: 100%;
+        float: none;
+        margin-left: 0;
+    }
+    .eventosuv-slider h3 {
+        width: 100%;
+    }
+
+    .eventosuv-categorias {
+        bottom: 0;
+    }
+}
+
+@media (max-width: 600px) {
+    .eventosuv-slider {
+        height: 180px;
+    }
+    .eventosuv-slider img {
+        max-height: 180px;
+    }
+}
+
+@media (max-width: 480px) {
+    .eventosuv-slider {
+        height: 140px;
+    }
+    .eventosuv-slider img {
+        max-height: 140px;
+    }
+
+    .eventosuv-categorias {
+        display: none;    
+    }
+}

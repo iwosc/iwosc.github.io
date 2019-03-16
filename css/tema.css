@@ -1,0 +1,1474 @@
+/*@charset "utf-8";*/
+/*
+ * UV 2012
+ * Una aportación para toda la humanidad
+ * Esto lo desarrollé en agosto de 2012. 
+ * Esta hecho para satisfacer o resolver un problema especifico en este preciso momento de la historia.
+ * Por favor, si estás en el futuro, úsalo, hazlo tuyo, pero por favor actualizalo a las nuevas versiones o tecnologias de tu futuro.
+ * Ajústalo a tus necesidades o revisa si hay una nueva versión disponible.
+ * No lo usas tal como esta y luego si algo no te gusta o ya no funciona digas: "pues es que así estaba, yo solo lo retomé".
+ * Entiende que yo estoy en el pasado. No me puedes hacer responsable de una necesidad que aún no sucede.
+ */
+ 
+
+/* =Structure
+----------------------------------------------- */
+
+/* Cuerpo */
+body {
+	margin: 0 0 5px;
+	min-width: 320px;
+	/*background: #e2e2e2;*/
+	background-color: #FFF;
+	color: #003;
+	/*font-family: "Gill Sans","Gill Sans MT","Trebuchet MS","Segoe UI","sans-serif",Arial;*/
+	font-family: "sans-serif",Arial,"Gill Sans","Trebuchet MS","Segoe UI";
+	/*-webkit-font-smoothing: antialiased; /* This needs to be set or some font faced fonts look bold on Mac. */
+	-webkit-tap-highlight-color: rgba(0,0,0,0); /* Esto es para que no haga el hightlight al hacer tap */
+	-moz-tap-highlight-color: rgba(0,0,0,0);
+	tap-highlight-color: rgba(0,0,0,0);
+}
+#page {
+	margin: 0 auto;
+	max-width: 1235px;
+	padding: 0 12px;
+	background-color: #fff;
+}
+#encabezado {
+	margin: 0;
+	overflow: hidden;
+}
+#primary {
+	
+}
+#content {
+	margin: 0;
+}
+
+
+/* =Header
+----------------------------------------------- */
+
+#linea-gradada {
+	background: #069; /* Old browsers */
+	background: -moz-linear-gradient(left,  #069 30%, #FFF 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, right top, color-stop(30%,#FFF), color-stop(100%,#FFF)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(left,  #069 30%,#FFF 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(left,  #069 30%,#FFF 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(left,  #069 30%,#FFF 100%); /* IE10+ */
+	background: linear-gradient(to right,  #069 30%,#FFF 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#006699', endColorstr='#FFFFFF',GradientType=1 ); /* IE6-9 */
+	height: 30px;
+	width: 60%;
+	float: left;
+}
+.contenedor-titulo {
+	float: right;
+	margin: 0 0;
+	min-width: auto;
+}
+#titulo-portal {
+	color: #036;
+	background-color: #FFF;
+	font-size: 2.25em;
+	line-height: 1;
+	margin: 0;
+}
+#titulo-portal a {
+	color: #036;
+	text-decoration: none!important;
+	text-shadow: inherit;
+}
+
+
+/* =Noticias
+----------------------------------------------- */
+
+#noticias {
+	clear: both;
+	overflow: hidden;
+	margin: 10px 0 10px 0;
+	position: relative;
+	border: 1px solid #CCC;
+}
+.noticias-slider {
+	height: 318px;
+}
+.noticias-slider,
+#actividades-contenedor {
+	background-image: url(../images/loader.gif);
+	background-position: center center;
+	background-repeat: no-repeat;
+}
+.flexslider {
+    border-radius: 0;
+	border: 0;
+	margin: 0;
+	box-shadow: none;
+}
+.carousel li {
+    margin: 0;
+	-webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    -o-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+}
+.slides-item {
+	max-height: 320px;
+	max-width: 1233px;
+}
+.slides-borde {
+	overflow: hidden;
+	background-color: #FFF;
+	-webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    -o-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+}
+.slides-articulo {
+	float: left;
+	width: 22%;
+	color: #036;
+	line-height: 1.25;
+}
+.slides-articulo a {
+	color: inherit;
+}
+.slides-articulo a:hover {
+	text-shadow: inherit;
+}
+.slides-imagen {
+	float: right;
+	width: 75%;
+	max-height: 318px;
+}
+
+/* Articulo */
+.slides-articulo h2 {
+	font-size: 1.2em;
+	font-weight: bold;
+	padding: 2px 4px;
+}
+.slides-articulo p {
+	margin: 0;
+	padding: 2px 4px;
+	font-size: 13px;
+}
+
+
+/* Nav */
+.slider-direction-nav-container {
+	position: absolute;
+	bottom: 0;
+	z-index: 10;
+	width: 99.9%;
+	display: none;
+}
+
+/* Felchitas */
+.noticias-slider-direction-nav {
+	list-style-type: none;
+	padding: 2px 0 0 0;
+	margin: 0;
+	float: left;
+	z-index: 10;
+	height: 40px;
+}
+.noticias-slider-direction-nav li {
+	float: left;
+	padding: 0;
+	margin: 0;
+	z-index: 100;
+}
+.noticias-slider-direction-nav a {
+    background-image: url(../imagenes/principal/sprite-noticias.png);
+	background-repeat: no-repeat;
+    cursor: pointer;
+    display: block;
+    height: 36px;
+    width: 42px;
+}
+
+/* Anterior */
+.noticias-slider-prev {
+	background-position: center -0px;
+}
+.noticias-slider-prev:hover {
+	background-position: center -70px;
+}
+
+/* Siguiente */
+.noticias-slider-next {
+	background-position: center -140px;
+}
+.noticias-slider-next:hover {
+	background-position: center -210px; /* + 70*/
+}
+
+/* Pause-Play */
+.noticias-slider-pauseplay {
+	padding: 0;
+	margin: 0;
+	float: right;
+	width: 40px;
+}
+.noticias-slider-pauseplay a {
+    background-image: url(../imagenes/principal/sprite-global.png);
+    cursor: pointer;
+    display: block;  
+	height: 40px;
+    width: 40px;  
+}
+
+/* Pause */
+.noticias-slider-pause {
+    background-position: center -280px;
+}
+.noticias-slider-pause:hover {
+    background-position: center -350px;
+}
+
+/* Play */
+.noticias-slider-play {
+    background-position: center -420px;
+}
+.noticias-slider-play:hover {
+    background-position: center -490px;
+}
+
+/* Ver todas */
+.noticias-slider-todas {
+	z-index: 10;
+	width: 135px;
+	padding: 0 5px;
+	margin: 0;
+	line-height: 40px;
+	float: left;
+}
+.noticias-slider-todas a {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 0.875em;
+	color: #06c;
+}
+
+#con_informe {
+	overflow: hidden;
+}
+
+
+/* =Banner destacados
+-------------------------------------------------------------- */
+
+.banner-destacados {
+	overflow: hidden;
+}
+.banner-margen {
+	margin-left: 3px;
+}
+
+.banner-ebooks {
+	width: 24.5%;
+	float: left;
+	display: block;
+	height: 110px;
+	background-color: #fff;
+	border: 1px solid #DDDDDF;
+	background-image: url(../imagenes/principal/Baner-E-books-1.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
+}
+.banner-ley2018 {
+	width: 24.5%;
+	float: left;
+	display: block;
+	height: 110px;
+	background-color: #C8EFDA;
+	border: 1px solid #DDDDDF;
+	background-image: url(../imagenes/principal/anteproyecto300-g.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
+}
+.banner-voto {
+	width: 24.5%;
+	float: left;
+	display: block;
+	height: 110px;
+	background-color: #fff;
+	border: 1px solid #DDDDDF;
+	background-image: url(../imagenes/principal/voto_300.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
+}
+.banner-programa-descuentos {
+	width: 24.5%;
+	float: left;
+	display: block;
+	height: 110px;
+	background-color: #fff;
+	border: 1px solid #DDDDDF;
+	background-image: url(../imagenes/principal/banner-programa-descuentos.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
+}
+.banner-meif {
+	width: 24.5%;
+	float: left;
+	display: block;
+	height: 110px;
+	background-color: #fff;
+	/*background-color: #CAE8F0;*/
+	border: 1px solid #DDDDDF;
+	background-image: url(../imagenes/principal/PTE1y2.png);
+	background-position: center bottom;
+	background-repeat: no-repeat;
+}
+.banner-informe {
+	width: 24.5%;
+	float: left;
+	display: block;
+	height: 110px;
+	background-color: #fff;
+	border: 1px solid #DDDDDF;
+	background-image: url(../imagenes/principal/informe2018-300x110.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
+}
+.banner-dp {
+	width: 24.5%;
+	float: left;
+	display: block;
+	height: 110px;
+	background-color: #F5F5F3;
+	border: 1px solid #DDDDDF;
+	background-image: url(../imagenes/principal/dp300-100.jpg);
+	background-position: right;
+	background-repeat: no-repeat;
+}
+.banner-ebooks2018 {
+	width: 24.5%;
+	float: left;
+	display: block;
+	height: 110px;
+	background-color: #FFF;
+	border: 1px solid #DDDDDF;
+	background-image: url(../imagenes/principal/Baner-E-books-1.jpg);
+	background-position: right;
+	background-repeat: no-repeat;
+}
+.banner-filu {
+	width: 24.5%;
+	float: left;
+	display: block;
+	height: 110px;
+	background-color: #EE7D00;
+	border: 1px solid #DDDDDF;
+	background-image: url(../imagenes/principal/filu2018_300.png);
+	background-position: right;
+	background-repeat: no-repeat;
+}
+.banner-etica {
+	width: 24.5%;
+	float: left;
+	display: block;
+	height: 110px;
+	background-color: #BDE8F1;
+	border: 1px solid #DDDDDF;
+	background-image: url(../imagenes/principal/Banner-Etica-1.png);
+	background-position: right;
+	background-repeat: no-repeat;
+}
+.banner-foro-consulta {
+	width: 24.5%;
+	float: left;
+	display: block;
+	height: 110px;
+	background-color: #FDF0CC;
+	border: 1px solid #DDDDDF;
+	background-image: url(../imagenes/principal/foro-consulta300x110.png);
+	background-position: right;
+	background-repeat: no-repeat;
+}
+.banner-junta {
+	width: 24.9%;
+	float: left;
+	display: block;
+	height: 110px;
+	background-color: #fff;
+	border: 1px solid #DDDDDF;
+	background-image: url(../imagenes/principal/Banner-ProcesoDesignacion-1.jpg);
+	background-position: right;
+	background-repeat: no-repeat;
+}
+
+@media (max-width: 1240px) {
+	.banner-programa-descuentos, .banner-voto, .banner-ebooks, .banner-dp, .banner-ebooks2018, .banner-ley2018, .banner-informe, .banner-meif {
+		width: 49.5%;
+		margin-bottom: 3px;
+	}
+	.banner-foro-consulta, .banner-etica, .banner-junta {
+		width: 49.5%;
+	}
+	.banner-voto {
+		background-position: center;
+		background-image:url(../imagenes/principal/voto_280.png);
+	}
+	.banner-programa-descuentos{
+		background-position: center; background-color: #18529d;
+		background-image: url(../imagenes/principal/banner-programa-descuentos-280.jpg);
+	}
+	.banner-dp {
+		background-position: center;
+		background-image:url(../imagenes/principal/dp280-100.png);
+	}
+	.banner-ebooks2018 {
+		background-position: center;
+		background-image:url(../imagenes/principal/Baner-E-books-2.jpg);
+	}
+	.banner-ley2018 {
+		background-position: center;
+		background-image:url(../imagenes/principal/anteproyecto280-p.jpg);
+	}
+	.banner-informe{
+		background-position: center;
+		background-image:url(../imagenes/principal/informe2018-280x80.jpg);
+	}
+	.banner-etica {
+		margin-left: 0;
+		background-position: center;
+		background-image:url(../imagenes/principal/Banner-Etica-2.png);
+	}
+	.banner-foro-consulta {
+		margin-left: 0;
+		background-position: center;
+		background-image:url(../imagenes/principal/foro-consulta280x80.png);
+	}
+	.banner-junta {
+		background-position: center center;
+		background-image:url(../imagenes/principal/Banner-ProcesoDesignacion-2.jpg);
+	}
+}
+
+@media (max-width: 768px) {
+	.banner-programa-descuentos, .banner-voto, .banner-ebooks, .banner-dp, .banner-ebooks2018, .banner-ley2018, .banner-etica, .banner-foro-consulta, .banner-junta, .banner-informe, .banner-meif{
+		width: 99.5%;
+		margin-bottom: 3px;
+		margin-left: 0;	
+		float: none;
+	}
+}
+
+@media (max-width: 768px) {
+	.banner-programa-descuentos, .banner-voto, .banner-ebooks, .banner-dp, .banner-ebooks2018, .banner-ley2018, .banner-etica, .banner-foro-consulta, .banner-junta, .banner-informe, .banner-meif {
+		height: 84px;
+	}
+	.banner-meif {
+		background-image: url(../imagenes/principal/PTE.png);
+		background-position: center bottom;
+	}
+	.banner-ebooks2018 {
+		background-position: center;
+		background-image:url(../imagenes/principal/Baner-E-books-3.jpg);
+	}
+	.banner-ebooks {
+		background-position: center;
+		background-image:url(../imagenes/principal/Baner-E-books-3.jpg);
+	}
+	.banner-dp {
+		background-position: center;		
+		background-image:url(../imagenes/principal/dp280-100.png);
+	}
+	.banner-etica {
+		margin-left: 0;
+		background-position: center;
+		background-image:url(../imagenes/principal/Banner-Etica-2.png);
+	}
+	.banner-foro-consulta {
+		margin-left: 0;
+		background-position: center;
+	}
+	.banner-junta {
+		background-position: center center;
+		background-image:url(../imagenes/principal/Banner-ProcesoDesignacion-3.jpg);
+	}
+	.banner-informe{
+		background-position: center;
+		background-image:url(../imagenes/principal/informe2018-280x80.jpg);
+	}
+	
+}
+
+
+
+/* =Actividades
+----------------------------------------------- */
+
+.actividades-universitarias {
+	overflow: hidden;	
+	margin: auto;
+	width: 1189px;
+}
+.convocatorias-contenedor {
+	overflow: hidden;
+	cursor: pointer;
+	float: left;
+	margin-left: 22px;
+	display: block;
+	border: 1px solid #999;
+}
+.acordion-contenedor {
+	float: left;	
+}
+.convocatorias-contenedor a {
+	display: block;
+	position: absolute;
+	width: 233px;
+	height: 320px;
+	z-index: 1;
+	box-shadow: inset 0px 0 4px 4px #BBB;
+}
+
+#actividades-contenedor {
+	overflow: hidden;
+	position: relative;
+	cursor: pointer;
+	min-height: 320px;
+	margin: auto;
+}
+.region #actividades-contenedor {
+	min-height: 260px;
+}
+#actividades {
+	overflow: hidden;
+	margin: 10px 0;
+	-webkit-transform: translate3d(0, 0, 0);
+    -o-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+}
+
+#actividades h2 {
+	font-family: "Segoe UI Light","Helvetica Neue","Segoe UI",Arial,"Gill Sans","Gill Sans Light";
+	font-weight: 100;
+	font-size: 2em;
+	color: #036;
+	text-align: center;
+}
+
+#actividades .actividades-restaura {
+	cursor: pointer;
+	display: block;
+}
+
+#actividades-contenedor, .fondo-actividad {
+	display: block;
+}
+
+/* Estilos del acordion */
+.lista-actividad {
+	display: none;
+	width: 100%;
+	height: 100%;
+	cursor: default !important;
+	/*-webkit-transition: all 3s ease; /*Lo necesita chrome para hacer la animacion bien*/
+	/*box-shadow: -5px 0px 10px #FFF;*/
+    -o-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+	transform: translate3d(0, 0, 0);
+}
+
+.acordion {
+	position: absolute;
+	width: 699px;
+	height: 320px;
+	z-index: 1;
+}
+
+.region .acordion {
+	height: 260px!important;
+}
+
+.acordion-opaco {
+	opacity: 0.80;
+	filter: Alpha(opacity=80);
+	background-color: #000;
+	-webkit-transform: translate3d(0, 0, 0);
+    -o-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+	transform: translate3d(0, 0, 0);
+}
+
+.imagen, .cajaTextos, .fondo-actividad, .titulo-actividad {
+	position: absolute;
+}
+
+.sombraIzquierda {
+	border-left: 1px solid #FFF;
+	box-shadow: 0px 0px 10px #000;
+}
+
+.cajaTextos {
+	bottom: 0;
+	width: 100%;
+	color: #FFF;
+	font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
+	font-weight: 300;
+	opacity: inherit;
+	-webkit-transform: translate3d(0, 0, 0);
+    -o-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+	transform: translate3d(0, 0, 0);
+}
+
+/* fondo superior del titulo */
+.fondo-actividad {
+	opacity: 0.80;
+	filter: Alpha(opacity=80);
+	height: 26px;
+	width: 100%;
+	border-bottom: 1px solid #FFF;
+	z-index: 1;
+	-webkit-transform: translate3d(0, 0, 0);
+    -o-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+	transform: translate3d(0, 0, 0);
+}
+.lista-actividad .fondo-actividad {
+	opacity: 0.90;
+	filter: Alpha(opacity=90);
+	height: 44px;
+	-webkit-transform: translate3d(0, 0, 0);
+    -o-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+	transform: translate3d(0, 0, 0);
+}
+
+/* texto superior del acordion y slide slide */
+.titulo-actividad {
+	font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
+	font-weight: 300;
+	font-size: 1.3em;
+	color: #FFF;
+	text-align: center;
+	z-index: 1;
+	-webkit-transform: translate3d(0, 0, 0);
+    -o-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+	transform: translate3d(0, 0, 0);
+}
+
+/* texto inferior del acordion */
+.actividad-titulo-contenido {
+	font-size: 0.875em;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -o-text-overflow: ellipsis;
+	padding: 2px 4px;
+	-webkit-transform: translate3d(0, 0, 0);
+    -o-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+	transform: translate3d(0, 0, 0);
+}
+
+/* Slide dentro de FlexSlider */
+.actividad-slide {
+	border-left: solid #FFF 1px;
+	/*border-right: solid #FFF 1px;*/
+	display: block;
+	-webkit-transform: translate3d(0, 0, 0);
+    -o-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+	transform: translate3d(0, 0, 0);
+}
+/* Sin borde el primer hijo */
+.slides li:first-child .actividad-slide {
+	border: none;
+}
+
+/* Slide de contenido de flexi */
+.actividad-contenido {
+	height: 320px;
+	display: block;
+	-webkit-transform:transform;
+	-ms-transform: translate3d(0, 0, 0);
+	transform: translate3d(0, 0, 0);
+}
+.region .actividad-contenido {
+	height: 260px!important;
+}
+
+/* El titulo superior del slide */
+.titulo-actividad-slide {
+	width: 100%;
+}
+
+/* El titulo inferior */
+.cajaTextos a {
+	color: #FFF;
+}
+.actividad-titulo-contenido-tit {
+	font-size: 1.1em;
+	white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -o-text-overflow: ellipsis;
+	padding: 2px 4px 0 4px;
+}
+/* La descripcion inferior */
+.actividad-titulo-contenido-subt {
+	font-size: 0.775em;
+	line-height: 1;
+	white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -o-text-overflow: ellipsis;
+	padding: 2px 4px;
+}
+
+/* Fondos*/
+.fondo4 {
+	background-color: #000;
+}
+.fondo0 {
+	background-color: #390;
+}
+.fondo1 {
+	background-color: #096;
+}
+.fondo2 {
+	background-color: #066;
+}
+.fondo3 {
+	background-color: #930;
+}
+
+/* Bolitas de Flexislider */
+.lista-actividad-control-nav {
+    top: 28px;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+	z-index: 100;
+    list-style: none;
+	height: 10px;
+    margin: 0;
+    padding: 0;
+}
+.lista-actividad .flex-viewport {
+	border: none;
+}
+.lista-actividad-control-nav li {
+    display: inline-table;
+	zoom: 1;
+	*display: inline;
+    margin: 0 4px;
+	padding: 0;
+	width: 10px;
+}
+.lista-actividad-control-nav li a {
+    background: none repeat scroll 0 0 #FFF;
+	opacity: 0.50;
+	filter: Alpha(opacity=50);
+    border-radius: 20px 20px 20px 20px;
+    cursor: pointer;
+    display: block;
+    height: 10px;
+    text-indent: 9999px;
+    width: 10px;
+}
+.lista-actividad-control-nav li a.lista-actividad-active {
+    background: none repeat scroll 0 0 #FFF;
+	opacity: 1;
+	filter: Alpha(opacity=100);
+    cursor: default;
+}
+
+
+/* =Actividades Paneles en chiquito
+----------------------------------------------- */
+
+/* Clearfix */
+.clearfix:before,
+.clearfix:after {
+    content: "";
+  display: table;
+  clear: both;
+}
+.clearfix:after {
+    clear: both;
+}
+.clearfix {
+    *zoom: 1;
+}
+
+#actividades-contenedor nav {
+	width: 100%;
+	background: #FFF;
+	font-size: 1.2em;
+	position: relative;
+	height: auto;
+	border-bottom: 0;
+}
+#actividades-contenedor nav ul {
+	padding: 0;
+	margin: 0 auto;
+	width: 100%;
+	display: none;
+	height: auto;
+}
+#actividades-contenedor nav li {
+	position: relative;
+	display: block;
+	float: none;
+	width: 100%;
+	opacity: 0.80;
+	filter: Alpha(opacity=80);
+}
+#actividades-contenedor nav a {
+	color: #FFF;
+	display: inline-block;
+	text-align: center;
+	text-decoration: none;
+	line-height: 50px;
+	/*text-align: left;*/
+	width: 100%;
+	text-shadow: 0 1px 0 #666;
+	/*text-indent: 25px;*/
+}
+#actividades-contenedor nav li a {
+	box-sizing: border-box;
+	-moz-box-sizing:border-box;
+	-webkit-box-sizing:border-box;
+	border-bottom: 1px solid #576979;
+	border-right: 1px solid #576979;
+	border-bottom: 1px solid #576979;
+}
+#actividades-contenedor nav a:hover, #actividades-contenedor nav a:active {
+	background-color: #8c99a4;
+}
+#actividades-contenedor nav a#pull {
+	display: block;
+	background-color: #336799;
+	width: 100%;
+	position: relative;
+}
+#actividades-contenedor nav a#pull:after {
+	content:"";
+	background: url('/imagenes/principal/nav-icon.png') no-repeat;
+	width: 30px;
+	height: 30px;
+	display: inline-block;
+	position: absolute;
+	right: 10px;
+	top: 15px;
+}
+
+
+/* =Tamaño de letra de contenidos de usuario
+----------------------------------------------- */
+
+.seccion-titulo {
+	font-size: 1.125em;	
+}
+
+
+/* =Titulo
+----------------------------------------------- */
+
+.seccion-titulo {
+	position: relative;
+	overflow: hidden;
+	margin: 4px 0 0 0;
+	min-height: 40px;	
+	clear: both;
+}
+
+.nombre-dependencia {
+	font-size: 2.25em;
+	line-height: 1;
+	font-family: "Segoe UI Light","Helvetica Neue","Segoe UI",Arial,"Gill Sans","Gill Sans Light";
+	text-align: center;
+	margin-left: 30px;
+}
+.nombre-dependencia h1 {
+	font-weight: 100;
+}
+.nombre-dependencia, 
+.nombre-dependencia a {
+	color: #036;
+}
+#NombreDependencia {
+	margin-bottom: 20px;
+}
+
+/* Regresar */
+.boton-regresar {
+	float: left;
+	position: absolute;
+	top: 0;
+	z-index:10;
+}
+.boton-regresar a {
+	background-image: url(../imagenes/principal/boton-back.png);
+	background-repeat: no-repeat;
+	font-size: 1px;
+	text-indent: -1000px;
+	color: #FFF;
+	width:	32px;
+	height: 32px;
+	display: block;
+}
+
+
+/* =SubTitulo
+----------------------------------------------- */
+
+.subtitulo-pagina h2 {
+	font-size: 1.525em;
+	line-height: 1;
+	margin-bottom: 20px;
+}
+
+
+
+/* =Contenido
+----------------------------------------------- */
+#ContenidoTextoPrincipal {
+	clear: both;
+	max-width: 1003px;
+	min-height: 300px;
+	margin: auto;
+	overflow: hidden;
+	color: #036;
+	/*font-family: "Gill Sans","Gill Sans MT","Trebuchet MS","Segoe UI","sans-serif",Arial;*/
+	/*font-family: "Gill Sans","Trebuchet MS","Segoe UI","sans-serif",Arial;*/
+	font-family: Arial,"Segoe UI","Gill Sans","Trebuchet MS","sans-serif";
+	font-size: 1.075em;
+}
+
+/* Links */
+.Texto a {
+	color: #003;
+}
+
+
+/* =Contacto
+----------------------------------------------- */
+
+/* Pie de dependencias */
+#pie-sitio {
+	clear: both;
+	overflow: hidden;
+	margin: 20px 0 0 0;
+}
+
+/* Contenedor izquierdo */
+#pie {
+	clear: both;
+	overflow: hidden;
+	background-color: #F5F5F5;
+	font-size: 0.875em;
+	padding: 10px;
+	float: left;
+	width: 68%;
+	margin: 0;
+}
+#pie a {
+	color: #036;
+	text-decoration: underline;
+}
+#pie a:hover {
+	color: #03c;
+}
+#pie nav {
+	float: right;
+}
+#pie ul {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+}
+#pie li {
+	float: left;
+	margin: 2px 4px;	
+}
+.pie-copy {
+	clear: both;
+	padding: 10px 0 10px;
+	overflow: hidden;
+}
+.pie-copy ul {
+	float: right;
+}
+.copy {
+	/*color: #666;*/
+	color: #036;
+	font-weight: bold;
+	margin-right: 20px!important;
+}
+.url a {
+	color: #039;
+	text-decoration: underline;
+}
+
+/* Pie de Buzon */
+.pie-buzon {
+	float: right;
+	width: 28%;
+	background-color: #E0E0E0;
+	height: 80px;
+}
+.pie-buzon a {
+	background-image: url(../imagenes/principal/sprite-pie.png);
+	background-repeat: no-repeat;
+	background-position: 160px -202px;
+	color: #039;
+	font-size: 1.5em;
+	display: block;
+	padding: 12px 0;
+}
+.pie-buzon span {
+	padding-left: 14%;
+	display: block;
+}
+
+
+/* Solo para efectos de prueba */
+.res {
+	border-top: 5px solid #900;
+	text-align: right;
+	padding: 0 4px;
+	font-size: 80%;
+	font-family: "Lucida Console", Monaco, monospace;
+}
+
+
+/* =Responsive Structure
+----------------------------------------------- */
+.gris {
+	color: #666685 !important;
+	text-shadow: none !important;
+	cursor: default !important;
+	text-decoration: none !important;
+}
+.disabled {
+	opacity:0.6 !important;
+	/*color:#000 !important;*/
+	text-shadow: none !important;
+	cursor: default !important;
+	text-decoration: none !important;
+}
+.nada{
+	text-shadow: none !important;
+	cursor: default !important;
+	text-decoration: none !important;
+}
+.nada:hover,
+.disabled:hover {
+	text-decoration: none !important;
+}
+
+.disabled img {
+	opacity:0.6;
+}
+
+/* =Responsive Structure
+----------------------------------------------- */
+
+@media (max-width: 1240px) {
+.res {
+	border-top-color: #33CC66;	
+}
+.actividades-universitarias {
+	width: auto;
+}
+.acordion-contenedor {
+	float: left;
+	width: auto;
+}
+.convocatorias-contenedor {	
+	float: right;
+	margin-left: 0;
+}
+
+}
+
+
+
+/* iPad landscape 1024 x 768 */
+@media (max-width: 1200px) {
+
+.res {
+	border-top-color: #000;	
+}
+
+/* =Header
+----------------------------------------------- */
+
+#linea-gradada {
+	width: 50%;
+}
+
+
+/* =Noticias
+----------------------------------------------- */	
+
+.noticias-slider {
+	height: auto;
+	min-height: 200px;
+}
+.slides-articulo {
+	font-size: 0.925em;
+}
+/* Nav */
+.slider-direction-nav-container {
+	width: 140px;	
+}
+
+/* Ver todas */
+.noticias-slider-todas {
+	line-height: 20px;	
+}
+
+/* =Contacto
+----------------------------------------------- */
+
+/* Pie de Buzon */
+.pie-buzon a {
+	background-position: right -202px;
+}
+
+
+}
+
+
+/* iPad landscape 1024 x 768 */
+@media (max-width: 1024px) {
+
+.res {
+	border-top-color: #FF0;
+}
+
+
+/* =Header
+----------------------------------------------- */
+
+#linea-gradada {	
+	width: 40%;
+}
+.contenedor-titulo {
+	margin: 0 0 10px;
+}
+/*#titulo-portal {
+	font-size: 2.5em;
+}*/
+
+
+/* =Noticias
+----------------------------------------------- */	
+
+.noticias-slider {
+	height: 254px;
+}
+.slides-articulo {
+	font-size: 0.9em;
+}
+
+
+/* =Tamaño de letra de contenidos de usuario
+----------------------------------------------- */
+
+/*.seccion-titulo, #ContenidoTextoPrincipal {
+	font-size: 1.125em;
+}
+/*#ContenidoTextoPrincipal {
+	padding-left: 40px;
+}*/
+
+}
+
+/* iPad landscape 1023 x 768 */
+@media (max-width: 1023px) {
+	
+
+/* =Noticias
+----------------------------------------------- */	
+
+.noticias-slider, .flexslider .slides img {
+	height: auto;
+}
+
+}
+
+
+/* PC 959 x  */
+@media (max-width: 959px) {
+
+
+/* =Actividades
+----------------------------------------------- */	
+
+/* texto inferior del acordion */
+.actividad-titulo-contenido {
+	white-space: nowrap;
+}
+
+}
+
+
+/* PC 920 x 600 */
+@media (max-width: 920px) {
+
+/* =Noticias
+----------------------------------------------- */	
+
+.flexslider .slides img {
+	min-height: 288px;
+}
+
+/* =Noticias
+----------------------------------------------- */	
+
+.noticias-slider {
+	height: auto;
+}
+
+.slides-articulo {
+	float: none;
+	width: auto;
+	padding-bottom: 0;
+	height: 74px;
+	font-size: 0.825em;
+}
+.slides-imagen {
+	float: none;
+	width: auto;
+}
+
+/* Imagen */
+.flexslider .slides img {
+	min-height: inherit;
+}
+
+/* Nav */
+.slider-direction-nav-container {
+	width: 100%;
+}
+.slider-direction-nav-fondo {
+	position: absolute;
+	height: 42px;
+	width: 100%;
+	background-color: #000;
+	opacity: 0.70;
+	z-index: -1;
+}
+
+/* Ver todas */
+.noticias-slider-todas {
+	line-height: 40px;
+}
+.noticias-slider-todas,
+.noticias-slider-direction-nav {
+	float:right;		
+}
+.noticias-slider-todas a {
+	color: #FFF;
+}
+
+/* Anterior */
+.noticias-slider-prev {
+	background-position: center -70px;
+}
+
+/* Siguiente */
+.noticias-slider-next {
+	background-position: center -210px;
+}
+
+/* Pause */
+.noticias-slider-pause {
+    background-position: center -350px;
+}
+
+/* Play */
+.noticias-slider-play {
+    background-position: center -490px;
+}
+
+
+
+
+}
+
+
+/* PC 800 x 600 */
+@media (max-width: 800px) {
+	
+.res {
+	border-top-color: #06F;
+}
+
+/* Global */
+p {
+	margin-bottom: 1em;
+}
+
+/* =Contacto
+----------------------------------------------- */
+
+/* Pie de Buzon */
+.pie-buzon a {
+	font-size: 1.2em;
+}
+.pie-buzon span {
+	padding-top: 6px;
+	padding-left: 8%;
+}
+
+}
+
+
+/* iPad portrait 768 x 1024 */
+@media (max-width: 768px) {
+.res {
+	border-top-color: #636;
+}
+
+
+/* =Tamaño de letra de contenidos de usuario
+----------------------------------------------- */
+
+.seccion-titulo,
+#ContenidoTextoPrincipal {
+	font-size: 0.975em;	
+}
+
+}
+
+
+/* iPad portrait 768 x 1024 */
+@media (max-width: 767px) {
+	
+
+
+
+
+}
+
+@media (max-width: 651px) {
+
+/* =Actividades
+----------------------------------------------- */
+
+#actividades-contenedor, .region #actividades-contenedor {
+	min-height: inherit;
+	background: none;
+}
+
+.region #actividades-contenedor {
+	margin-bottom: 10px;
+}
+
+.convocatorias-contenedor {	
+	display: none;
+}
+.acordion-contenedor {
+	float: none;
+}
+	
+
+/* =Header
+----------------------------------------------- */
+
+#linea-gradada {
+	width: 90%;
+	height: 10px;
+}
+.contenedor-titulo {
+	float: none!important;
+	margin: 0 auto 10px auto;
+	min-width: inherit!important;
+	text-align: center;
+}
+#titulo-portal {
+	font-size: 1.9em;
+}
+
+
+/* =Titulo
+----------------------------------------------- */
+
+.nombre-dependencia {
+	font-size: 1.6em;
+}
+
+/* =Contacto
+----------------------------------------------- */
+
+/* Contenedor izquierdo */
+#pie {
+	float: none;
+	width: auto;
+}
+
+/* Pie de Buzon */
+.pie-buzon {
+	float: none;
+	width: auto;
+}
+.pie-buzon a {
+	font-size: 1.5em;
+	background-position: 140px -202px;
+}
+.pie-buzon span {
+	padding-left: 20px;
+	padding-top: 0;
+}
+	
+}
+
+
+/* iPhone landscape 480 x 320 */
+@media (max-width: 480px) {
+
+.res {
+	border-top-color: #99FF00;
+}
+
+#page {
+	padding: 0;
+}
+
+/* =Titulo
+----------------------------------------------- */
+
+.nombre-dependencia h1 {
+	clear: none;	
+}
+
+/* =Noticias
+----------------------------------------------- */	
+
+.slides-articulo {
+	font-size: 0.75em;
+}
+/* =Noticias
+----------------------------------------------- */	
+
+.slides-articulo p {
+	font-size: 1.1em;
+}
+
+}
+
+/* iPhone landscape 480 x 320 */
+@media (max-width: 320px) {
+.res {
+	border-top-color: #C66;
+}
+
+body {
+	margin: 0;
+}
+
+}
